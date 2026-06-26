@@ -1,0 +1,25 @@
+*{
+
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+
+}
+.lista li{
+     transition: transform .3s ease, color .3s ease;
+}
+.lista li:hover{
+    color: crimson;
+      transform: translateX(12px);
+}
+
+
+.lista  li::marker{
+    content: "►";
+    color: #544554;
+}
+
+.lista li:hover::marker{
+    color: crimson;
+}
+
