@@ -1,0 +1,87 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+.body,html{
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: #282828;
+}
+
+.carta{
+    
+    width: 50vh;
+    height: 80vh;
+    
+    border-radius: 7%;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s ease-out;
+}
+.carta img{
+    width: 100%;
+    object-fit: cover;
+    object-position: end;
+    height: 100%;
+    transition: 0.4s ease-in;
+    
+}
+
+.carta:hover img{
+    transform: scale(1.4);
+    
+}
+.carta::before{
+    position: absolute;
+    content: "Casa los Olivos";
+    left: 50%;
+    font-family:"Manrope";
+    transform: translateX(-50%) translateY(-200%);
+    font-size: 3vh;
+    color: aliceblue;
+    font-weight: 600;
+    transition: all 0.5s ease-out;
+    z-index: 1;
+}
+.carta:hover::before{
+    transform: translateX(-50%) translateY(80%);
+    
+}
+.carta::after{
+    content: "Esta casa de campo está diseñada como un santuario de paz, mimetizándose perfectamente con el entorno forestal que la rodea. Es un espacio donde el olor a pino, el sonido del viento entre las hojas y la tranquilidad del bosque se convierten en los verdaderos protagonistas de la experiencia diaria.";
+    z-index: 1;
+   font-family: "manrope";
+   font-weight: 300;
+   font-size: 16px;
+    left: 0;
+    bottom: 0;
+    color: aliceblue;
+    text-align: justify;
+    position: absolute;
+    transition: 0.5s ease-out;
+    background: linear-gradient();
+    padding: 5%;
+    width: 90%;
+  
+    transform: translateY(100%);
+    opacity: 0;
+}
+.carta:hover::after{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0) 100% );
+    width: 90%;
+   
+    transform: translateY(0%);
+    text-align: justify;
+    
+    padding: 5% ;
+     padding-top: 10%;
+    opacity: 1;
+}

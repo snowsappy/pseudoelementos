@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+.body,html{
+    padding: 20%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.parrafo {
+    width: 350px;
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color: rgb(71, 71, 71);
+    
+}
+
+.parrafo::first-line {
+    color: royalblue;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+/*first letter*/
+
+.letra{
+    margin-top: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    color: rgb(71, 71, 71);
+    
+}
+.letra::first-letter{
+    font-family: 'Georgia', serif; 
+  font-size: 4.5rem;             
+  font-weight: bold;           
+  float: left;                
+  line-height: 1;                
+  margin-right: 0.5rem;         
+  color: #333;     
+}

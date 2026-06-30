@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+.escenario{
+    position: relative;
+    width: 10%;
+    height: 10vh;
+    overflow: hidden;
+    background: rgb(226, 255, 241);
+    color: #356664;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 10px;
+      transition: 0.5s ease-in-out;
+    margin:22% 45%;
+    border-radius: 50px;
+}
+
+
+.escenario::before,.escenario::after{
+
+    content: "";
+    position:absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #356664;
+    transition: 0.5s  ease-out;
+
+}
+
+.escenario::before{
+    left: 0%;
+}
+
+.escenario::after{
+ right: 0%;
+}
+
+.escenario:hover::before{
+    transform: translate(-100%);
+}
+
+.escenario:hover:after{
+    transform: translate(100%);
+}
+
+
+
+
